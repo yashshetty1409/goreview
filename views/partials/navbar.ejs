@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>name</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Favicons -->
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">AMAN ANKIT</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link px-3" href="/">Home</a>
+          
+
+        </div>
+        <% if(currentUser && (currentUser._id.equals('618108487f40850236ad7760'))){ %>
+          <div class="t">
+            <a  class="nav-link px-3" href="/customers/new" style="color: #878b8f!important;">New Customer</a>
+          </div>
+          <% } %>
+
+      </div>
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <% if(!currentUser) {%>
+        <a class="nav-link px-3" href="/login">Login</a>
+        <a class="nav-link px-3" href="/register">Register</a>
+        <% } else {%>
+          <a class="nav-link px-3" href="/logout">Logout</a>
+          <% } %>
+    </div>
+  </div>
+</header>
+
+  </div>
+</div>

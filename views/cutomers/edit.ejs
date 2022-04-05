@@ -1,0 +1,30 @@
+<% layout('layouts/boilerplate') %> 
+    <div class="row">
+        <h1 class="text-center">Edit Customer</h1>
+        <div class="col-6 offset-3">
+            <form action="/customers/<%=customer._id%>?_method=PUT" method="POST" novalidate class="validated-form">
+                <div class="mb-3">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-control" type="text" id="name" name="customer[name]" value="<%=customer.name%>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="number">Mobile number</label>
+                <input class="form-control" type="number" id="number" name="customer[number]" value="<%=customer.number%>" required>
+            </div>
+    
+            <div class="mb-3">
+                <label class="form-label" for="address">Address</label>
+                <input class="form-control" type="text" id="address" name="customer[address]" value="<%=customer.address%>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="password">Password</label>
+                <textarea class="form-control" type="text" id="password" name="customer[password]" required><%= customer.password%> </textarea>
+            </div>
+            <div class="mb-3">
+            <button class="btn btn-info">Update Customer</button>
+            </div>
+        </form>
+    
+        <a href="/customers/<%=customer._id%>"> Back to the Customer</a>
+    </div>
+        </div>

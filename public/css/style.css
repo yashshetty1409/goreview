@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+#nav{
+    background-image: url(https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-almost.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+}
+.row{
+    margin: 0;
+}
+#con{
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5rem;
+}
+.container-fluid{
+    padding: 0% 2%;
+}
+#features{
+    padding: 5% 8%;   
+    text-align: center;
+}
+.collection{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: #605d82;
+}
+.circle{
+    width: 12rem;
+    border-radius: 5%;
+   
+}
+.circle2{
+    width: 10.5rem;
+    border-radius: 5%;
+}
+.others{
+    margin-top: 2%;
+}
+.ab{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+}
+.about{
+    background-color: #464866;
+    margin-top: 2%;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+.num{
+    font-size: 3rem; 
+}
+.time{
+    font-size: .7rem;
+}
+.reach{
+    padding-top: 7%;
+}
+.map{
+    border-radius: 40%;
+}
+footer{
+    text-align: center;
+}
+    

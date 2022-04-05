@@ -1,0 +1,116 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>name</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Favicons -->
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">AMAN ANKIT</a>
+  
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <a class="nav-link px-3" href="/logout">Sign out</a>
+    </div>
+  </div>
+</header>
+
+
+
+   
+    <div class="row">
+      <h1 class="text-center">New Activity</h1>
+      <div class="col-6 offset-3">
+        <form action="/customers/<%=customer._id%>/activitis" method="POST" class="mb-3 validated-form" novalidate>
+          <div class="mb-3">
+              <label class="form-label" for="title">Date</label>
+              <input class="form-control" type="date" id="title" name="activity[date]" required>
+          </div>
+          <div class="mb-3">
+              <label class="form-label" for="subuser">Sub-customer</label>
+              <input class="form-control" type="text" id="device" name="activity[subuser]" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="items">Items</label>
+            <input class="form-control" type="text" id="device" name="activity[items]" required>
+        </div>
+  
+          <div class="mb-3">
+              <label class="form-label" for="total">Total bill</label>
+              <div class="input-group">
+                  <span class="input-group-text" id="price-label">Rs.</span>
+                  <input type="text" class="form-control" id="total" placeholder="0.00" aria-label="price"
+                      aria-describedby="price-label" name="activity[total]" required>
+              </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="given">Given</label>
+            <div class="input-group">
+                <span class="input-group-text" id="price-label">Rs.</span>
+                <input type="text" class="form-control" id="given" placeholder="0.00" aria-label="price"
+                    aria-describedby="price-label" name="activity[given]" required>
+            </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="remaining">Remaining</label>
+          <div class="input-group">
+              <span class="input-group-text" id="price-label">Rs.</span>
+              <input type="text" class="form-control" id="remaining" placeholder="0.00" aria-label="price"
+                  aria-describedby="price-label" name="activity[remaining]" required>
+          </div>
+      </div>
+          <div class="mb-3">
+              <label class="form-label" for="remarks">Remarks</label>
+              <textarea class="form-control" type="text" id="remarks" name="activity[remarks]" ></textarea>
+          </div>
+          <div class="mb-3">
+          <button class="btn btn-success">Add Activity</button>
+          </div>
+      </form>
+      
+      </div>
+      </div>
+
+  </div>
+</div>
+
+
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script>
+  </body>
+</html>

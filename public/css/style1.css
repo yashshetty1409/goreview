@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+.sub_menu-1{
+  display: none;
+  width: 55rem;
+  height: 30rem;
+  border-radius: 10px;
+  margin-top: -.3rem;
+  margin-left: -5rem;
+box-shadow: -3px 3px 2px 0 rgb(0 0 0 / 15%);
+  }
+  .sub_menu-1 a{
+      text-decoration: none;
+      color: #343a40!important;
+  }
+  .sub_menu-1 ul li{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .sub_menu-1 ul li:hover{
+    font-weight: bold;
+  }
+  .sub_menu-2 ul li a:hover{
+    font-weight: lighter;
+    color: green;
+  }
+  .sub_menu-3 ul li a:hover{
+    font-weight: lighter;
+    color: green;
+  }
+  .sub_menu-4 ul li a:hover{
+    font-weight: lighter;
+    color: green;
+  }
+  .sub_menu-5 ul li a:hover{
+    font-weight: lighter;
+    color: green;
+  }
+  .sub_menu-6 ul li a:hover{
+    font-weight: lighter;
+    color: green;
+  }
+  
+  .sub_menu-2{
+    display: none;
+  width: 40rem;
+  
+}
+  
+  
+  .sub_menu-3{
+    display: none;
+    width: 40rem;
+  }
+  
+  .sub_menu-4{
+    display: none;
+    width: 40rem;
+  }
+  .sub_menu-5{
+    display: none;
+    width: 7rem;
+    height: 4rem;
+  }
+  .sub_menu-6{
+    display: none;
+    width: 40rem;
+  }
+  header ul li:hover .sub_menu-1{
+    display: block;
+    position: absolute;
+      background-color:#e1e8f6;
+    padding: 1rem;
+  }
+  .hover_me1:hover .sub_menu-2{
+    display: block;
+position: absolute;
+  background-color:#e1e8f6;
+margin-left: 4rem;
+padding: .5rem;
+  }
+  .hover_me1:hover .sub_menu-2 ul{
+    display: flex;
+  }
+  
+  .hover_me2:hover .sub_menu-3{
+    display: block;
+    position: absolute;
+      background-color:#e1e8f6;
+    margin-left: 4rem;
+    padding: .5rem;
+  }
+  .hover_me2:hover .sub_menu-3 ul{
+    display: flex;
+  }
+  .hover_me3:hover .sub_menu-4{
+    display: block;
+    position: absolute;
+      background-color:#e1e8f6;
+    margin-left: 4rem;
+    padding: .5rem;
+  }
+  .hover_me3:hover .sub_menu-4 ul{
+    display: flex;
+  }
+  .hover_me4:hover .sub_menu-5{
+    display: block;
+    position: absolute;
+      background-color:#e1e8f6;
+    margin-left: 4rem;
+    padding: .5rem;
+  }
+  .hover_me4:hover .sub_menu-5 ul{
+    display: flex;
+  }
+  .hover_me5:hover .sub_menu-6{
+    display: block;
+position: absolute;
+  background-color:#e1e8f6;
+margin-left: 4rem;
+padding: .5rem;
+  }
+  .hover_me5:hover .sub_menu-6 ul{
+    display: flex;
+  }
+  header ul li:hover .sub_menu-1 ul{
+    display: block;
+    
+  margin-left: -8rem;
+  }
+  nav{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .navbar-nav ul{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.05rem;
+    
+  }
+  .navbar-nav ul li{
+    list-style: none;
+   padding: 0 6rem;
+  }
+  .t{
+    margin-left: -6rem;
+  }
+  @media(max-width:750px ){
+    .category{
+      display: none;
+    }
+    .t{
+      margin-left: -1rem;
+    }
+  }
